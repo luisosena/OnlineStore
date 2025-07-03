@@ -101,6 +101,10 @@ body {
 	transform: translateY(-5px);
 }
 
+.hero {
+	color: black;
+	background-image: url('perfume-image-2.jpg');
+}
 /* Footer */
 footer {
 	text-align: center;

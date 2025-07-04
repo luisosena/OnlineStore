@@ -73,10 +73,10 @@ body {
 
 /* Hero Section */
 .hero {
-	background-image: url('./images/hero-bg.jpg');
+	background-image: url('../images/hero-bg.jpg');
 	background-size: cover;
 	background-position: center;
-	background-image: url('image-7.jpeg');
+	background-image: url('../images/image-7.jpeg');
 	height: 100vh;
 	display: flex;
 	justify-content: center;

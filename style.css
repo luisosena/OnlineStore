@@ -172,15 +172,18 @@ body {
 .scroller {
     max-width: 100%;
     overflow: hidden;
-    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    scrollbar-width: none; /* Firefox */
+}
+
+.scroller::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
 }
 
 .scroller-inner {
     display: flex;
     gap: 1rem;
     width: max-content;
-    animation: scroll 30s linear infinite;
+    transition: transform 0.5s ease-in-out;
 }
 
 .featured-item {
@@ -201,12 +204,6 @@ body {
     color: #333;
     font-weight: 500;
     white-space: nowrap;
-}
-
-@keyframes scroll {
-    to {
-        transform: translateX(calc(-50% - 0.5rem));
-    }
 }
 
 /* Footer */

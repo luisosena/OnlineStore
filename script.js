@@ -46,6 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			currentIndex++;
 			const scrollAmount = (itemWidth + gap) * currentIndex;
 			scrollerInner.style.transform = `translateX(-${scrollAmount}px)`;
-		}, 1500);
+		}, 2000);
 	}
 });
